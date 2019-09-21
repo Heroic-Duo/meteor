@@ -1,0 +1,58 @@
+/**
+ * 公用样式
+ **/
+.clear {
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  user-select: none;
+}
+
+.oh {
+  overflow: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+
+/**
+ *UI组件样式修正
+ */
+
+/*** 导航 **/
+.ivu-menu-horizontal {
+  line-height: 100px;
+  height: 100px;
+}
+.ivu-menu {
+  font-size: 16px;
+}
+.ivu-menu-horizontal .ivu-menu-item,
+.ivu-menu-horizontal .ivu-menu-submenu {
+  padding: 0;
+  margin: 0 0px;
+}
+#navigation .ivu-menu-item {
+  padding: 0;
+}
+.ivu-menu-light{
+  background: auto
+}
+body{
+  color: #000;
+  font-weight: inherit;
+}
+h2{
+  font-weight: inherit;
+}
