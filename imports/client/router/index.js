@@ -1,49 +1,13 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import {
-    index,
-    // searchDetails,
-    daoJia,
-    shiLiao
-} from './route'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
-Vue.use(Router)
+import routes from './config/routesConfig'
 
-export default new Router({
+const router = new VueRouter({
     mode: 'history',
-    routes: [{
-            path: '/',
-            redirect: '/index'
-        },
-        {
-            path: '/index',
-            name: 'index',
-            meta: {
-                title: '庄王殿'
-            },
-            component: index,
-            children: [
-
-            ]
-        },
-        {
-            path: '/daoJia',
-            name: 'daoJia',
-            meta: {
-                title: '道家养生'
-            },
-            component: daoJia
-        },
-
-        {
-            path: '/shiLiao',
-            name: 'shiLiao',
-            meta: {
-                title: '食疗养生'
-            },
-            component: shiLiao
-        },
-
-
-    ]
+    routes
 })
+
+Vue.use(VueRouter);
+
+export default router
